@@ -1,2 +1,337 @@
 /*font-family: "Raleway", sans-serif;
 font-family: "Roboto", sans-serif;*/
+body {
+  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, sans-serif; /* C5–C7 */
+  color: var(--text); /* C8 */
+  background-color: var(--white); /* C11 */
+  font-size: 16px;
+  line-height: 1.5; /* C10 multiplier */
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  color: var(--title);
+  margin: 0 0 0.5em;
+}
+ul {
+  list-style: none; /* reset markers per task */
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none; /* reset underline per task */
+}
+a:hover,
+a:focus-visible {
+  color: var(--brand); /* C3 */
+  outline: none;
+}
+.container {
+  width: min(100% - 32px, var(--container));
+  margin-inline: auto;
+}
+/* header / nav */
+.header {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border);
+  background: var(--white);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: space-between;
+}
+/* .nav__list and .nav_logo */
+
+.nav__list,
+.nav_list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav__logo {
+  font-family: "Raleway", sans-serif; /* B9 */
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  color: var(--brand);
+}
+
+.nav__link {
+  display: inline-block;
+  padding: 8px 0;
+  color: var(--title);
+  transition: color 0.2s ease;
+}
+
+.nav__link:hover,
+.nav__link:focus-visible {
+  color: var(--brand-hover); /* C3 active state */
+}
+
+/* block in header */
+
+.contacts,
+.Contacts {
+  font-style: normal;
+}
+
+.contacts__list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.contacts__link {
+  transition: color 0.2s ease;
+}
+
+.contacts__link:hover,
+.contacts__link:focus-visible {
+  color: var(--brand-hover); /* C4 */
+}
+
+/* Hero */
+
+.hero {
+  background: var(--hero-bg);
+  color: var(--white);
+  text-align: center;
+  padding: 120px 16px;
+}
+
+.hero__title {
+  color: var(--white);
+  font-size: clamp(36px, 4.2vw, 56px); /* C9 */
+  line-height: 1.07; /* C10 */
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  font-weight: 500;
+  cursor: pointer; /* C13 */
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+.btn--primary {
+  background-color: var(--brand);
+  color: var(--white);
+}
+
+.btn--primary:hover,
+.btn--primary:focus-visible {
+  background-color: var(--brand-hover); /* C3 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+/* Benefits */
+
+.benefits {
+  padding: 120px 16px;
+  background: var(--white);
+}
+
+.section-title {
+  font-family: "Raleway", sans-serif; /* Headings visually in Raleway as in mockups */
+  font-weight: 700;
+  font-size: 36px; /* C9 — adjust if your Figma uses a different size */
+  line-height: 1.17; /* C10 */
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--title);
+  margin-bottom: 72px;
+}
+
+.benefits__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  width: min(100%, var(--container));
+  margin-inline: auto;
+}
+
+.benefits__item {
+  background: var(--white);
+}
+
+.benefits__name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2; /* 24/20 */
+  letter-spacing: 0.02em;
+  color: var(--title);
+  margin-bottom: 8px;
+}
+
+.benefits__text {
+  color: var(--text);
+}
+
+/* Team */
+
+.team {
+  padding: 120px 16px;
+  background: var(--cloud);
+}
+
+.team__list {
+  width: min(100%, var(--container));
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.team__item {
+  background: var(--white);
+  border-radius: 0 0 var(--radius) var(--radius);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  text-align: center;
+}
+
+.team__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.team__name {
+  margin: 32px 0 8px;
+  font-weight: 500;
+  font-size: 20px; /* C9 */
+  line-height: 1.2; /* C10 */
+  letter-spacing: 0.02em;
+  color: var(--title);
+}
+
+.team__role {
+  margin: 0 0 32px;
+  color: var(--text);
+}
+
+/* Portfolio */
+
+.portfolio {
+  padding: 120px 16px;
+  background: var(--white);
+}
+
+.portfolio__grid {
+  width: min(100%, var(--container));
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.portfolio__item {
+  background: var(--white);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-card);
+}
+
+.portfolio-card__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-card__caption {
+  padding: 32px 16px;
+  border-top: 1px solid var(--border);
+}
+
+.portfolio-card__name {
+  margin: 0 0 8px;
+  font-size: 20px; /* C9 */
+  line-height: 1.2; /* C10 */
+  letter-spacing: 0.02em;
+  color: var(--title);
+}
+
+.portfolio-card__tags {
+  margin: 0;
+  font-size: 16px; /* C9 */
+  line-height: 1.5; /* C10 */
+  color: var(--text);
+}
+
+/* Portfolio hover*/
+.portfolio__item:hover,
+.portfolio__item:focus-within {
+  box-shadow: 0 4px 16px rgba(46, 47, 66, 0.12);
+  border-color: rgba(231, 233, 252, 0.8);
+}
+
+/* Footer */
+
+.footer {
+  padding: 100px 16px;
+  background: var(--title);
+  color: var(--cloud);
+  text-align: left;
+}
+
+.footer__logo {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  color: var(--cloud);
+  margin-bottom: 16px;
+}
+
+.footer__text {
+  max-width: 380px;
+  margin: 0;
+  color: var(--cloud);
+}
+
+/* Responsiveness */
+
+@media (max-width: 1024px) {
+  .benefits__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .team__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portfolio__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .nav__list,
+  .nav_list,
+  .contacts__list {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    padding: 96px 16px;
+  }
+
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 48px;
+  }
+
+  .benefits__list,
+  .team__list,
+  .portfolio__grid {
+    grid-template-columns: 1fr;
+  }
+}
