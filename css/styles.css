@@ -1,5 +1,21 @@
 /*font-family: "Raleway", sans-serif;
 font-family: "Roboto", sans-serif;*/
+
+:root {
+  --brand: #4d5ae5;
+  --brand-hover: #404bbf;
+  --title: #2e2f42;
+  --text: #434455;
+  --white: #ffffff;
+  --cloud: #f4f4fd;
+  --border: #e7e9fc;
+  --hero-bg: #2e2f42;
+
+  --container: 1158px;
+  --radius: 12px;
+  --shadow-card: 0 2px 8px rgba(46, 47, 66, 0.08);
+}
+
 body {
   font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, sans-serif; /* C5–C7 */
   color: var(--text); /* C8 */
