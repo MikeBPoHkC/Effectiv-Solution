@@ -53,7 +53,7 @@ a:focus-visible {
 
 .nav__logo {
   font-family: "Raleway", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.03em;
   color: var(--brand);
@@ -226,7 +226,7 @@ a:focus-visible {
 
 .footer__logo {
   font-family: "Raleway", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.03em;
   color: var(--cloud);
