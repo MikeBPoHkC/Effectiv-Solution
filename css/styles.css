@@ -77,7 +77,12 @@ a:focus-visible {
   transition: color 0.2s ease;
 }
 
-.nav__link:hover,
+/* nav__link:hover */
+.nav__link:hover {
+  color: #404bbf;
+}
+
+/* nav__link:focus/Tab) */
 .nav__link:focus {
   color: #404bbf;
 }
