@@ -102,8 +102,13 @@ a:focus-visible {
   transition: color 0.2s ease;
 }
 
-.contacts__link:hover,
-.contacts__link:focus {
+/* nav__link:hover */
+.nav__link:hover {
+  color: #404bbf;
+}
+
+/* nav__link:focus */
+.nav__link:focus {
   color: #404bbf;
 }
 
