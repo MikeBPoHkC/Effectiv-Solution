@@ -93,6 +93,10 @@ a:focus-visible {
   letter-spacing: 0.02em;
   color: #434455;
 }
+.contacts__link:hover,
+.contacts__link:focus {
+  color: #404bbf;
+}
 
 /* Hero */
 .hero {
@@ -104,7 +108,7 @@ a:focus-visible {
 
 .hero__title {
   color: var(--white);
-  font-size: 36px;
+  font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   margin: 24px 0 16px;
