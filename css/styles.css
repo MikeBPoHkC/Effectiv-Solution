@@ -116,18 +116,23 @@ a:focus-visible {
 
 /* Button */
 .btn {
-  background-color: var(--brand);
-  color: var(--white);
-  border: 1px solid var(--brand);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
   cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease,
-    border-color 0.2s ease;
+}
+.btn--primary {
+  background-color: #405ae5;
+  border: 1px solid #4d5ae5;
 }
 
 .btn--primary:hover,
 .btn--primary:focus-visible {
-  background-color: var(--brand-hover);
-  border-color: var(--brand-hover);
+  background-color: #404bbf;
+  border-color: #404bbf;
 }
 
 /* Section title */
