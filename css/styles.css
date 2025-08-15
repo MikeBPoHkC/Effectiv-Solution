@@ -226,18 +226,19 @@ a:focus-visible {
 }
 
 .portfolio-card__name {
-  margin: 0 0 4px;
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--title);
+  color: #2e2f42;
 }
 
 .portfolio-card__tags {
   margin: 0;
   font-size: 16px;
   line-height: 1.5;
-  color: var(--text);
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
 .portfolio__item:hover,
