@@ -61,6 +61,10 @@ a:focus-visible {
   text-transform: uppercase;
 }
 
+.logo-accent {
+  color: #2e2f42;
+}
+
 .nav__link {
   color: var(--title);
   transition: color 0.2s ease;
