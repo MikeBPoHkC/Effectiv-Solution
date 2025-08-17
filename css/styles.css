@@ -201,14 +201,16 @@ a:focus-visible {
   margin: 16px 0 4px;
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--title);
 }
 
 .team__role {
-  margin: 0 0 16px;
-  color: var(--text);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
 
 /* Portfolio */
@@ -249,6 +251,10 @@ a:focus-visible {
   color: #4d5ae5;
   line-height: 1.17;
   text-transform: uppercase;
+}
+
+.footer-logo-part {
+  color: #f4f4fd;
 }
 
 .footer__text {
