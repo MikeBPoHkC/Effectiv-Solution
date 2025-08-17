@@ -169,7 +169,7 @@ a:focus-visible {
 
 .benefits__text {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text);
@@ -194,13 +194,14 @@ a:focus-visible {
   border: 1px solid var(--border);
   text-align: center;
   margin: 0 0 16px;
+  background-color: #ffffff;
 }
 
 .team__name {
   margin: 16px 0 4px;
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--title);
 }
